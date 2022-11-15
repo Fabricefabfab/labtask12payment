@@ -33,7 +33,7 @@ $(document).ready(function(){
 					$("#admin-register-form").trigger("reset");
 					
 					//calling the window
-					window.location.href = window.origin+"/labtask12payment/admin/index.php";
+					window.location.href = window.origin+"/admin/index.php";
 				}else if(resp.status == 303){
 					$(".message").html('<span class="text-danger">'+resp.message+'</span>');
 				}
