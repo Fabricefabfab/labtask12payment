@@ -7,7 +7,7 @@ if(isset($_POST["category"])){
 	$run_query = mysqli_query($con,$category_query) or die(mysqli_error($con));
 	echo "
 		<div class='nav nav-pills nav-stacked'>
-			<li class='active'><a href='#'><h4>Product Categories</h4></a></li>
+			<li class='active'><a href='#'><h4>Categories</h4></a></li>
 	";
 	if(mysqli_num_rows($run_query) > 0){
 		while($row = mysqli_fetch_array($run_query)){
